@@ -20,7 +20,7 @@ from rest_framework_simplejwt import views as jwt_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/v1/things/", include("things.urls")),
+    path("api/v1/employees/", include("employees.urls")),
     path("api-auth/", include("rest_framework.urls")),
     path(
         "api/token/",
@@ -33,6 +33,3 @@ urlpatterns = [
         name="token_refresh",
     ),
 ]
-
-
-
